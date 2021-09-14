@@ -1,0 +1,67 @@
+.green{
+    color: rgb(6, 230, 219);
+}
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(6, 230, 219); /* The typwriter cursor */
+     white-space: nowrap;/* Keeps the content on a single line  */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(42, 44, 44, 0) }
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("img/cover.jpg") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+  }
+  .my-bg{
+      background-color: rgba(0, 0, 0, 0.561);
+      margin-top: 0;
+  }
+  .color{
+      color: white;
+  }
+  ul{
+      list-style: nones;
+  }
+  li{
+      list-style: none;
+  }
+.media:hover{
+    background-color: rgba(6, 230, 219, 0.438);
+}
+.my-btn{
+    background-color: rgba(100, 148, 237, 0.116);
+}
+.my-btn:hover{
+    color: white;
+    background-color:rgba(6, 230, 219, 0.438) ;
+}
